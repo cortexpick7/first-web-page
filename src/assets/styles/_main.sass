@@ -1,0 +1,40 @@
+@import './_properties.sass'
+body
+  background-color: $honeydew
+  font-family: $mainfont
+:root 
+  --animate-delay: 0.5s
+.fade-in
+  opacity: 0
+  transition: opacity 250ms ease-in
+
+.appear 
+  opacity: 1
+
+.blackedout
+  background-color: #00000271
+  z-index: 4
+  transition: ease 0.5s
+  width: 100vw
+  height: 300vh
+  position: absolute
+  display: flex
+.home
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+.goUp
+  transition: 0.5s ease
+  &:hover
+    cursor: pointer
+    background: #62635fea
+    i
+      color: $honeydew
+  i
+    color: $red
+  position: fixed
+  bottom: 20px
+  right: 30px
+  padding: 10px
+  border-radius: 10px
+  background: $honeydew

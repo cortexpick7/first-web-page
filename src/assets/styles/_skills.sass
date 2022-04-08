@@ -1,0 +1,38 @@
+@import './_properties.sass'
+.skills
+  display: flex
+  flex-direction: column
+  margin-bottom: 10vh
+  .skill-container
+    border-radius: 10px
+    box-shadow: 0px 2px 10px 2px #00000042
+    height: 40vh
+    background-color: $red
+    margin-top: 15vh
+    display: flex
+    .pic
+      border-bottom-left-radius: 10px
+      border-top-left-radius: 10px
+      background-image: url("https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+      height: 100%
+      background-repeat: no-repeat
+      background-size: cover
+      width: 40%
+    .text
+      width: 60%
+      h1,.description
+        margin-top: 15px
+        margin-left: 10px
+        text-align: justify
+        text-justify: inter-word
+      p
+        font-size: 1.5rem
+        margin-right: 10px
+    @media only screen and (max-width: 600px)
+      .pic
+        width: 0
+      .text
+        width: 100%
+    @media only screen and (max-width: 1013px)
+      p
+        font-size: 1rem !important

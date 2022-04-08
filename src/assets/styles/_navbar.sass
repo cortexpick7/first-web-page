@@ -1,0 +1,32 @@
+@import './_properties.sass'
+.navbar
+  transition: 0.5s ease
+  &:hover
+    color: $lightblue
+  background-color: $red
+  box-shadow: 0px 2px 10px 2px #00000042
+  height: 10vh
+  .navbar-toggler
+    border: none
+    &:active
+      outline: none
+  .navbar-brand
+    color: $honeydew
+    margin-left: 20px
+    font-size: 2em
+  .navbar-nav
+    .nav-item
+      .nav-link
+        margin-left: 10px
+        margin-right: 10px
+        &:hover
+          color: $middleblue
+          cursor: pointer
+        color: $honeydew
+        font-size: 1.5em
+.toggleOn
+  position: absolute
+  right: 20px
+.navbarHeight
+  height: 30vh
+  

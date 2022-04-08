@@ -1,0 +1,46 @@
+@import './_properties.sass'
+.contactArea
+  font-family: $mainfont
+  height: 50vh
+  .contactForm
+    margin-bottom: 50px
+    display: flex
+    justify-content: center
+    background-color: $red
+    border-radius: 10px
+    box-shadow: 0px 2px 10px 2px #00000042
+    padding: 30px
+    form
+      width: 100%
+      align-items: center
+      .buttons
+        display: flex
+        justify-content: space-around
+        button
+          border: none
+          style: none
+          width: 40%
+          border-radius: 10px
+          background-color: $honeydew
+          height: 40px
+          &:hover
+            background-color: #aaaaaa
+    .part
+      margin: 30px
+      display: flex
+      flex-direction: column
+      input
+        border-style: none
+        border-radius: 10px
+        height: 30px
+        &:active, &:focus
+          outline: none
+      textarea
+        background-color: $honeydew
+        border-style: none
+        border-radius: 10px
+        height: 80px
+        &:active, &:focus
+          outline: none
+label
+  color: $honeydew
